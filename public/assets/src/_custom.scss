@@ -1,0 +1,154 @@
+$bp-sm: 768px;
+$bp-md: 992px;
+$bp-lg: 1200px;
+
+.bv-hidden {
+  backface-visibility: hidden;
+}
+
+.page-section h2.section-heading {
+  margin-bottom: 0;
+}
+
+.pattern-overlay:before {
+  content: "";
+  background: url("../assets/img/smile-pattern-v2.png") repeat 0 0;
+  background-size: initial;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  filter: blur(2px);
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bg-lims-gradient {
+  background: #ffc400;
+  background-image: linear-gradient(to right bottom, #fed136, #ffc428, #ffb71b, #ffa90d, #ff9b00);
+}
+
+.bg-lims-gradient-grey {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn-lims-gradient {
+  background: #ffc400;
+  background-image: linear-gradient(to right bottom, #fed136, #ffc428, #ffb71b, #ffa90d, #ff9b00);
+  color: #222222;
+}
+
+.btn-outline-primary:hover {
+  color: #222222;
+  background-color: #fed136;
+  border-color: #fed136;
+}
+
+#mainNav .navbar-toggler {
+  color: #222222;
+  background: #ffc400;
+  background-image: linear-gradient(to right bottom, #fed136, #ffc428, #ffb71b, #ffa90d, #ff9b00);
+}
+
+.masthead {
+  min-height: 100vh;
+}
+
+.masthead-logo {
+  height: 3rem;
+  @media (min-width: $bp-sm) {
+    height: 4rem;
+  }
+}
+
+.services-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  fill: white
+}
+
+.slides {
+  cursor: pointer;
+}
+
+.text-lims {
+  color: #ff9b00;
+}
+
+.text-smile-gradient {
+  background: -webkit-linear-gradient(left, #fed136, #ff9b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-lims {
+  @media (min-width: $bp-sm) {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+    &:hover {
+      box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, .15);
+    }
+  }
+}
+
+.shadow-lims-static {
+  @media (min-width: $bp-sm) {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+  }
+}
+
+.services-item {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+}
+
+.anim-1 {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+.anim-2 {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+.anim-3 {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}

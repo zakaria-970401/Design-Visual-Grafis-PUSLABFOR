@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="SMILE Puslabfor POLRI"/>
+    <meta name="author" content="SMILE Puslabfor POLRI"/>
+    <title>SMILE - Puslabfor</title>
+    <link rel="icon" type="image/png" href="assets/img/puslabfor-icon.png">
+    <meta name="theme-color" content="#222222"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/app.css" rel="stylesheet"/>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-size: 14px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background: #222222;
+        }
+
+        .font-xs {
+            font-size: 0.75rem;
+        }
+
+        .fill-current {
+            fill: currentColor;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100vh;
+            background: #222222;
+            position: fixed;
+            z-index: 0;
+        }
+
+        .form-signin {
+            width: 100%;
+            max-width: 450px;
+            padding: 15px;
+            margin: auto;
+            z-index: 1;
+        }
+
+        @media only screen and (min-width: 48em) {
+            body {
+                background: linear-gradient(to top left, #222222, #45402d);
+            }
+
+            body:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 0;
+                background-image: url("assets/img/smile-bg-pattern-v5.png");
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: cover;
+                filter: blur(1px) opacity(0.1);
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .form-signin {
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 0.5rem;
+                padding: 25px;
+            }
+        }
+
+
+        .form-signin .checkbox {
+            font-weight: 400;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-signin .form-control-inverse {
+            color: #fff7d8;
+            background-color: hsla(0, 0%, 100%, .05);
+            border-color: rgba(255, 247, 216, 0.75);
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        #see-password {
+            right: 1em;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 3;
+            opacity: 0.75;
+        }
+
+        .loader {
+            width: 24px;
+            height: 24px;
+            border: 3px solid #222222;
+            border-top: 3px solid orangered;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body class="text-center">
+<div class="overlay"></div>
+<form class="form-signin position-relative">
+    <img class="d-block mb-3 mx-auto" src="assets/img/puslabfor-480.png" alt="" height="75px">
+    <img class="logo-smile" src="assets/img/smile-logo.svg" alt="" width="50%">
+    <div class="alert alert-primary mt-3 mb-0" role="alert" style="display: none">
+        <span class="font-xs font-weight-bold">
+            Login gagal, periksa kembali email atau password anda.
+        </span>
+    </div>
+    <!--mail input-->
+    <label class="sr-only" for="email" class="sr-only">Email address</label>
+    <input type="email"
+           id="email"
+           name="email"
+           class="mt-5 form-control form-control-inverse mb-2"
+           placeholder="Email address"
+           required autofocus autocomplete="off">
+    <!--password input-->
+    <div class="form-group position-relative mb-4">
+        <label class="sr-only" for="password" class="sr-only">Password</label>
+        <input type="password"
+               id="password"
+               class="form-control form-control-inverse"
+               name="password"
+               placeholder="Password"
+               required minlength="8" autocomplete="off">
+        <span id="see-password" class="position-absolute text-white">
+           <img src="assets/img/visibility_off.svg" alt="make password visible">
+        </span>
+    </div>
+    <!--submit-->
+    <a href="/kapus" class="btn btn-lg btn-lims-gradient d-flex w-100 justify-content-center align-items-center">
+        <span class="idle">Log in</span>
+        <div class="loader" style="display: none"></div>
+      </a>
+    <!--footer-->
+    <a id="back" href="/" class="d-block mt-5 mb-1 text-white-50 font-xs">
+        &leftarrow; Kembali ke beranda
+    </a>
+</form>
+</body>
+<!-- Core theme JS-->
+<script>
+    //ganti visibility
+    const seePassword = document.querySelector('#see-password');
+    const password = document.querySelector('#password');
+
+    function handler1() {
+        seePassword.innerHTML = `<img src="/assets/img/visibility.svg" alt="make password visible">`;
+        password.setAttribute('type', 'text');
+        this.addEventListener("click", handler2, {once: true});
+    }
+
+    function handler2() {
+        seePassword.innerHTML = `<img src="assets/img/visibility_off.svg" alt="make password visible">`;
+        password.setAttribute('type', 'password');
+        this.addEventListener("click", handler1, {once: true});
+    }
+
+    seePassword.addEventListener("click", handler1);
+
+    // tambahan u/demo
+    const alert = document.querySelector('.alert');
+    const idle = document.querySelector('.idle');
+    const loader = document.querySelector('.loader');
+    const submitBtn = document.querySelector('#submit');
+    submitBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        alert.style.display = "none";
+        loader.style.display = "initial";
+        idle.style.display = "none";
+        setTimeout(() => {
+            loader.style.display = "none";
+            idle.style.display = "initial";
+            alert.style.display = "block";
+        }, 2000);
+    });
+</script>
+</body>
+</html>

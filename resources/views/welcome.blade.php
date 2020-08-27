@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="SMILE adalah layanan sistem informasi yang memungkinkan penyidik mengelola aliran sampel dan data terkait,
+                    menstandarkan alur kerja, pengujian
+                    dan prosedur, sambil memberikan kontrol proses yang akurat."/>
+    <meta name="author" content="SMILE Puslabfor POLRI"/>
+    <title>SMILE - Puslabfor</title>
+    <link rel="icon" type="image/png" href="assets/img/puslabfor-icon.png">
+    <meta name="theme-color" content="#222222"/>
+    <!--slick js-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/app.css" rel="stylesheet"/>
+    <style>
+        #mainNav.navbar-shrink {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: #222222;
+        }
+
+        #mainNav.navbar-shrink .navbar-brand {
+            font-size: 1.25em;
+        }
+
+        #mainNav.navbar-shrink .navbar-brand svg,
+        #mainNav.navbar-shrink .navbar-brand img {
+            height: 1.5rem;
+        }
+
+        .slick-next:before, .slick-prev:before {
+            color: #ffc400;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .slides:hover .slick-next:before, .slides:hover .slick-prev:before {
+            opacity: 1;
+            transition: all 0.5s ease;
+        }
+
+        .slick-list {
+            padding: 0.5rem 0.5rem;
+        }
+
+        .slick-slide {
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .slick-slide:focus {
+            outline: none;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            background: navajowhite;
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body id="page-top">
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-none">SMILE Brand</span>
+            <img class="d-none d-md-inline-block mr-1 h-100" src="assets/img/puslabfor-icon.png"
+                 alt="puslabfor logo">
+            <img src="assets/img/smile-logo.svg" alt="smile logo"/>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Jenis Pelayanan</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Tentang Kami</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mekanisme">Mekanisme</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="anim-1 masthead-logo">
+            <img class="mx-auto h-100 d-inline-block" src="assets/img/smile-logo.svg" alt="smile logo"/>
+        </div>
+        <h1 class="masthead-subheading text-capitalize font-weight-light text-white-50 mt-3 anim-2">
+            Sistem Manajemen Informasi Laboratorium Elektronik
+        </h1>
+    </div>
+</header>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <!--judul section-->
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">
+                Jenis Pelayanan
+            </h2>
+            <h3 class="section-subheading text-muted">
+                Jenis Pelayanan Laboratorium Forensik Polri
+            </h3>
+        </div>
+        <!--slides-->
+        <div class="row text-center slides">
+            <div class="col-md-6 col-lg-4 py-3 mb-3 mb-lg-0">
+                 <span class="d-block mx-auto bg-lims-gradient services-item shadow-lims-static position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="services-logo" viewBox="0 0 24 24">
+                        <path d="M4 6.75A4.756 4.756 0 018.75 2h9.133a2.745 2.745 0 00-2.633-2H3.75A2.752 2.752 0 001 2.75v15.5A2.752 2.752 0 003.75 21H4z"/><path
+                            d="M20.25 4H8.75A2.752 2.752 0 006 6.75v14.5A2.752 2.752 0 008.75 24h11.5A2.752 2.752 0 0023 21.25V6.75A2.752 2.752 0 0020.25 4zm-2 17h-7.5a.75.75 0 010-1.5h7.5a.75.75 0 010 1.5zm0-4h-7.5a.75.75 0 010-1.5h7.5a.75.75 0 010 1.5zm0-3.5h-7.5a.75.75 0 010-1.5h7.5a.75.75 0 010 1.5zm0-4h-7.5a.75.75 0 010-1.5h7.5a.75.75 0 010 1.5z"/>
+                    </svg>
+                </span>
+                <h4 class="my-3 truncate">Dokumen & Uang Palsu</h4>
+                <p class="text-muted truncate-lines">
+                    Bertugas menyelenggarakan pelayanan pemeriksaan teknis kriminalistik TKP dan pemeriksaan laboratoris
+                    kriminalistik barang bukti dokumen (tulisan tangan, tulisan ketik, dan tanda tangan), uang palsu
+                    (uang kertas RI, uang kertas asing, dan uang logam) dan produk cetak (produk cetak konvensional,
+                    produk cetak digital, dan cakram optik) serta memberikan pelayanan umum forensik kriminalistik.
+                </p>
+                <a role="button" href="/dokupalfor" class="btn btn-lims-gradient rounded-pill shadow-lims">
+                    Selengkapnya
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 py-3 mb-3">
+                <span class="d-block mx-auto bg-lims-gradient services-item shadow-lims-static position-relative">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="services-logo" viewBox="0 0 512 512">
+                       <path d="M95.521 171.682v13.163H78.017v141.67h17.504v13.803h219.807V171.682zM0 171.682h48.01v168.636H0zM505.569 247.168c-11.042-15.153-25.055-28.676-41.649-40.209-33.217-23.075-72.726-35.278-114.255-35.278h-4.331v168.636h4.331c20.764 0 41.019-3.051 60.243-8.982a195.974 195.974 0 0054.012-26.296c16.594-11.532 30.607-25.055 41.649-40.209L512 256l-6.431-8.832z"/>
+                   </svg>
+                </span>
+                <h4 class="my-3 truncate">Balistik & Metalurgi</h4>
+                <p class="text-muted truncate-lines">
+                    Bertugas menyelenggarakan pelayanan pemeriksaan teknis kriminalistik TKP dan pemeriksaan laboratoris
+                    kriminalistik barang bukti senjata api (senjata api, peluru dan selongsong peluru), bahan peledak
+                    (bahan peledak, komponen-komponen bom, dan bom pasca ledakan (post blast) ) dan metalurgi (bukti
+                    nomor seri, kerusakan logam), dan kecelakaan konstruksi serta memberikan pelayanan umum forensik
+                    kriminalistik.
+                </p>
+                <a role="button" href="/balmetfor" class="btn btn-lims-gradient rounded-pill shadow-lims">
+                    Selengkapnya
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 py-3 mb-3">
+                 <span class="d-block mx-auto bg-lims-gradient services-item position-relative shadow-lims-static">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="services-logo" viewBox="0 0 512 512">
+                       <path d="M39.822 59.733v295.822h432.355V59.733H39.822zm392.533 238.933H79.644V99.555h352.711v199.111zM312.889 384v28.444H199.111V384H0v11.378c0 31.289 25.6 56.889 56.889 56.889h398.222c31.289 0 56.889-25.6 56.889-56.889V384H312.889z"/>
+                   </svg>
+                 </span>
+                <h4 class="my-3 truncate">Fisika & Komputer</h4>
+                <p class="text-muted truncate-lines">
+                    Bertugas menyelenggarakan pelayanan pemeriksaan teknis kriminalistik TKP dan pemeriksaan laboratoris
+                    kriminalistik barang bukti uji kebohongan (lie detector), jejak, radioaktif, konstruksi bangunan,
+                    peralatan teknik, kebakaran/pembakaran, dan komputer (suara dan gambar (audio/video), komputer &
+                    telepon genggam (computer & mobile phones), dan kejahatan jaringan internet/intranet (cyber
+                    network)) serta memberikan pelayanan umum forensik kriminalistik.
+                </p>
+                <a role="button" href="/fiskomfor" class="btn btn-lims-gradient rounded-pill shadow-lims">
+                    Selengkapnya
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 py-3 mb-3">
+                 <span class="d-block mx-auto bg-lims-gradient services-item position-relative">
+                     <svg aria-hidden="true" class="services-logo" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512">
+                         <path d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z"/>
+                     </svg>
+                </span>
+                <h4 class="my-3 truncate">Kimia & Biologi</h4>
+                <p class="text-muted truncate-lines">
+                    Bertugas menyelenggarakan pelayanan pemeriksaan teknis kriminalistik TKP dan laboratoris
+                    kriminalistik barang bukti kimia (bahan kimia yang belum diketahui (unknown material), dan bahan
+                    kimia produk industri), biologi/serologi (serologi, biologi molecular, dan bahan-bahan hayati) dan
+                    toksikologi atau lingkungan hidup (toksikologi, mikroorganisme, dan pencemaran lingkungan hidup),
+                    serta memberikan pelayanan umum forensik kriminalistik.
+                </p>
+                <a role="button" href="/kimbiofor" class="btn btn-lims-gradient rounded-pill shadow-lims">
+                    Selengkapnya
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 py-3 mb-3">
+                 <span class="d-block mx-auto bg-lims-gradient services-item position-relative shadow-lims-static">
+                    <svg aria-hidden="true" class="services-logo" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 576 512">
+                        <path d="M112 32C50.1 32 0 82.1 0 144v224c0 61.9 50.1 112 112 112s112-50.1 112-112V144c0-61.9-50.1-112-112-112zm48 224H64V144c0-26.5 21.5-48 48-48s48 21.5 48 48v112zm139.7-29.7c-3.5-3.5-9.4-3.1-12.3.8-45.3 62.5-40.4 150.1 15.9 206.4 56.3 56.3 143.9 61.2 206.4 15.9 4-2.9 4.3-8.8.8-12.3L299.7 226.3zm229.8-19c-56.3-56.3-143.9-61.2-206.4-15.9-4 2.9-4.3 8.8-.8 12.3l210.8 210.8c3.5 3.5 9.4 3.1 12.3-.8 45.3-62.6 40.5-150.1-15.9-206.4z"/>
+                    </svg>
+                </span>
+                <h4 class="my-3 truncate">Narkotika & Obat Berbahaya</h4>
+                <p class="text-muted truncate-lines">
+                    Bertugas menyelenggarakan pelayanan pemeriksaan teknis kriminalistik TKP dan pemeriksaan laboratoris
+                    kriminalistik barang bukti narkotika (narkotika bahan alam, bahan sintesa & semi sintesa, dan cairan
+                    tubuh), psikotropika (bahan & sediaan psikotropika, laboratorium illegal (clandestine labs) bahan
+                    psikotropika) dan obat (bahan kimia obat berbahaya, bahan kimia adiktif, dan prekursor). Serta
+                    memberikan pelayanan umum forensik kriminalistik.
+                </p>
+                <a role="button" href="/narkobafor" class="btn btn-lims-gradient rounded-pill shadow-lims">
+                    Selengkapnya
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About-->
+<section class="page-section bg-dark pattern-overlay position-relative" id="about">
+    <div class="container">
+        <!--title-->
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase text-white">Tentang Kami</h2>
+            <h3 class="section-subheading text-white-50">Penjelasan singkat mengenai SMILE Puslabfor</h3>
+        </div>
+
+        <!--content-->
+        <div class="row">
+
+            <!--left col-->
+            <div class="col-sm-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                <img width="50%" data-src="assets/img/puslabfor-480.png" class="img-fluid lazyload"
+                     data-delay="1s" alt="logo SMILE">
+            </div>
+
+            <!--right col-->
+            <div class="col-sm-6 d-flex flex-column justify-content-center">
+                <p class="text-white animated bv-hidden" data-delay="0.5s" style="opacity: 0">
+                    SMILE adalah layanan yang memungkinkan penyidik mengelola aliran sampel dan data terkait,
+                    menstandarkan alur kerja, pengujian
+                    dan prosedur, sambil memberikan kontrol proses yang akurat.
+                </p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a class="btn btn-lims-gradient rounded-pill mt-3 animated bv-hidden"
+                       href="/smile" role="button" rel="noopener" data-delay="1s" style="opacity: 0;">
+                        Pelajari lebih lanjut
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Mekanisme Pemeriksaan-->
+<section class="page-section bg-light" id="mekanisme">
+    <div class="container">
+        <!--title-->
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Mekanisme Pemeriksaan</h2>
+            <h3 class="section-subheading">Infografis mengenai Mekanisme Pemeriksaan SMILE</h3>
+        </div>
+
+        <!--content-->
+        <div class="row">
+            <div class="col-12">
+                <!--card start-->
+                <div class="card h-100 shadow-lims-static">
+                    <img class="card-img-top lazyload" data-src="assets/img/mekanisme_smile.jpg"
+                         alt="mekanisme pemeriksaan">
+                </div>
+                <!--card end-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer py-4 bg-dark position-relative pattern-overlay">
+    <div class="container">
+        <div class="row align-items-lg-start justify-content-between">
+            <div class="col-lg-4 text-lg-left">
+                <p id="copyright" class="mb-2 text-white"></p>
+                <p class="mb-0" style="color: #d7d7d7">
+                    <span class="font-weight-light">Cipambuan - Babakan Madang</span><br>
+                    <span class="font-weight-light">Bogor, Jawa Barat 16810</span>
+                </p>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="#!">Privacy Policy</a>
+                <a href="#!">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
+<!--slick js-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        defer></script>
+<script src="js/slick_config.js" defer></script>
+<!--lazy load-->
+<script src="js/lazysizes.min.js" defer></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js" defer></script>
+<script>
+    //intersection observer
+    const animatedEl = document.querySelectorAll('.animated');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry, index) => {
+            if (entry.intersectionRatio > 0) {
+                entry.target.style.animation = `slideInUp 1 1s ${entry.target.dataset.delay} forwards ease-in-out`;
+            } else {
+                entry.target.style.animation = `none`;
+            }
+        })
+    });
+    animatedEl.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
